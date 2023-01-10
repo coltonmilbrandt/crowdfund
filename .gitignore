@@ -1,3 +1,4 @@
+.encryptedKey.json
 node_modules
 .env
 coverage
@@ -8,4 +9,6 @@ typechain-types
 # Hardhat files
 cache
 artifacts
-
+gas-report.txt
+typechain-types
+gas-report.txt 

@@ -20,6 +20,7 @@ module.exports = async ({getNamedAccounts, deployments}) => {
         from: deployer,
         args: [args], // price feed address by chain
         log: true,
+        waitConfirmations: network.config.blockConfirmations || 1,
     })
 
     if(!developmentChains.includes(network.name) && process.env.ETHERSCAN_API_KEY) {
